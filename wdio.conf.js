@@ -37,5 +37,11 @@ exports.config = {
             }
             await browser.switchToWindow(handles[0]);
         }
+    },
+
+    onComplete: async function () {
+        if (browser && browser.sessionId) {
+            await browser.deleteSession();
+        }
     }
 }

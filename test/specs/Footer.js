@@ -7,7 +7,7 @@ describe('[Target] Footer Links', () => {
   beforeEach(async () => {
     await browser.reloadSession();
     await targetPage.navigateToHomePage();
-    await browser.execute(() => window.scrollTo(0, document.body.scrollHeight));
+    await targetPage.scrollToBottom();
   });
 
   it('should validate all About Us footer links', async () => {
