@@ -1,5 +1,4 @@
-//npx wdio run wdio.conf.js --spec ./test/specs/SearchBar.js/Negative.js 
-//npx wdio run wdio.conf.js --spec test/specs/SearchBar.js/*
+
 import SearchBar from '../../pageobjects/searchBar.js';
 
 describe('[Target] Search Bar - Single Character Security Input Handling', () => {
